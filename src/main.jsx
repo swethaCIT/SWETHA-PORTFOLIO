@@ -204,7 +204,7 @@ function App() {
           <SectionHeading eyebrow="01 / ABOUT" title={<>Developer by craft.<br /><span className="muted-heading">Curious by nature.</span></>} />
           <div className="about-grid">
             <p className="about-statement">I enjoy working across the stack — from <em>clear interfaces</em> to the APIs and data behind them.</p>
-            <div className="about-details"><p>My experience includes responsive client-facing websites, admin workflows, REST APIs, mobile HRMS features, and a healthcare application.</p><p>I bring a frontend-first mindset, a foundation in software engineering, and an interest in building practical products with thoughtful user experiences.</p><div className="about-facts"><div><strong>500+</strong><span>LeetCode problems solved</span></div><div><strong>Top 10</strong><span>Walmart Sparkathon</span></div><div><strong>3</strong><span>Internship / client experiences</span></div></div></div>
+            <div className="about-details"><p>I build responsive client-facing websites, interactive admin dashboards, REST APIs, and mobile applications, with a focus on scalable solutions and seamless user experiences.</p><p>I bring a frontend-first mindset, a foundation in software engineering, and an interest in building practical products with thoughtful user experiences.</p><div className="about-facts"><div><strong>500+</strong><span>LeetCode problems solved</span></div><div><strong>Top 10</strong><span>Walmart Sparkathon</span></div><div><strong>3</strong><span>Internship / client experiences</span></div></div></div>
           </div>
         </section>
 
