@@ -203,14 +203,14 @@ function App() {
         <section className="about section-wrap section-pad" id="about">
           <SectionHeading eyebrow="01 / ABOUT" title={<>Developer by craft.<br /><span className="muted-heading">Curious by nature.</span></>} />
           <div className="about-grid">
-            <p className="about-statement">I enjoy working across the stack — from <em>clear interfaces</em> to the APIs and data behind them.</p>
-            <div className="about-details"><p>I build responsive client-facing websites, interactive admin dashboards, REST APIs, and mobile applications, with a focus on scalable solutions and seamless user experiences.</p><p>I bring a frontend-first mindset, a foundation in software engineering, and an interest in building practical products with thoughtful user experiences.</p><div className="about-facts"><div><strong>500+</strong><span>LeetCode problems solved</span></div><div><strong>Top 10</strong><span>Walmart Sparkathon</span></div><div><strong>3</strong><span>Internship / client experiences</span></div></div></div>
+            <p className="about-statement">I turn ideas into <em>meaningful digital experiences</em> through thoughtful design and purposeful code.</p>
+            <div className="about-details"><p>From responsive websites and interactive dashboards to REST APIs and mobile HRMS applications, I enjoy building practical solutions that solve real-world problems.</p><p>With a frontend-first mindset and a strong software engineering foundation, I focus on creating intuitive interfaces, reliable functionality, and seamless user experiences.</p><div className="about-facts"><div><strong>500+</strong><span>LeetCode problems solved</span></div><div><strong>Top 10</strong><span>Walmart Sparkathon</span></div><div><strong>3</strong><span>Internship / client experiences</span></div></div></div>
           </div>
         </section>
 
         <section className="work-section section-pad" id="work">
           <div className="section-wrap">
-            <SectionHeading eyebrow="02 / SELECTED WORK" title={<>A few things I’ve<br /><span className="muted-heading">helped bring to life.</span></>} text="Projects across full-stack product workflows, interactive web experiences, and healthcare software." />
+            <SectionHeading eyebrow="02 / SELECTED WORK" title={<>A few things I’ve<br /><span className="muted-heading">helped bring to life.</span></>} text="From full-stack applications and business platforms to interactive web experiences, built to solve real-world problems." />
             <div className="project-toolbar"><div className="filter-label">FILTER PROJECTS <span>↘</span></div><div className="project-filters" role="group" aria-label="Filter projects">{filters.map(filter => <button key={filter} className={activeFilter === filter ? "filter-button active" : "filter-button"} onClick={() => { setActiveFilter(filter); setActiveProject(null); }}>{filter}<span>{filter === "All" ? projects.length : projects.filter(p => p.category === filter).length}</span></button>)}</div></div>
             <div className="project-grid">
               {visibleProjects.map(project => <article className={`project-card ${project.accent} reveal ${activeProject === project.number ? "project-expanded" : ""}`} key={project.number}>
@@ -223,6 +223,7 @@ function App() {
                 {activeProject === project.number && <div className="project-details"><p className="eyebrow">WORK HIGHLIGHTS</p><ul>{project.points.map(point => <li key={point}>{point}</li>)}</ul></div>}
               </article>)}
             </div>
+            <p className="project-note">Descriptions reflect the experience and projects listed in my resume. Demo links and screenshots can be added when available.</p>
           </div>
         </section>
 
